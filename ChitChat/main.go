@@ -12,7 +12,7 @@ func main() {
 
 	// ルートURL設定
 	mux.HandleFunc("/", index)
-    mux.HandleFunc("/err", err)
+	mux.HandleFunc("/err", err)
 
 	mux.HandleFunc("/login", login)
 	mux.HandleFunc("/logout", logout)
