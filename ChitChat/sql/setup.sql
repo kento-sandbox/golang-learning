@@ -1,9 +1,9 @@
 create table users (
   id          serial primary key,
   uuid        varchar(64) not null unique,
-  name        varchar(255),
-  email       varchar(255) not null unique,
-  password    varchar(255) not null,
+  name        varchar(100),
+  email       varchar(100) not null unique,
+  password    varchar(100) not null,
   created_at  timestamp not null
 );
 
